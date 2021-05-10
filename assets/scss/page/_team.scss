@@ -1,0 +1,63 @@
+.team {
+  min-height: 900px;
+
+
+  .team__title {
+    margin-top: -50px;
+  }
+
+  .team__content {
+    text-align: center;
+
+
+    h3 {
+      text-align: center;
+      @include font-size(28px);
+      font-weight: 700;
+      color: #313243;
+      margin-top: 30px;
+      margin-bottom: 6px;
+
+    }
+
+    p {
+      text-align: center;
+      @include font-size(26px);
+      color: #313243;
+      margin-bottom: 20px;
+
+    }
+
+    .item__social {
+      @include flex();
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .fab {
+        background-color: #daac00;
+        line-height: 35px;
+        width: 35px;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .fab:nth-child(4) {
+        margin-right: 0;
+      }
+    }
+
+    @media #{$info-phone}{
+      .item {
+        &:hover {
+          box-shadow: none;
+        }
+      }
+
+    }
+  }
+
+  @media #{$info-phone-1}{
+
+  }
+}
