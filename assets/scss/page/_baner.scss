@@ -1,0 +1,52 @@
+.baner {
+  min-height: 910px;
+  background-color: #a17c00;
+  width: 100%;
+
+  .banner__wrap {
+    @include flex();
+    justify-content: space-between;
+    align-items: center;
+    .baner__content {
+      width: 670px;
+      padding-top: 210px;
+
+      h2 {
+        color: #fff;
+        @include font-size(64px);
+        font-weight: 700;
+        line-height: 82px;
+        margin-bottom: 28px;
+      }
+
+      p {
+        color: #fff;
+        @include font-size(26px);
+        margin-bottom: 28px;
+        font-weight: 400;
+      }
+
+      .baner__content__button {
+        @include flex();
+
+      }
+      @media #{$info-tablet-vertical}{
+        width: 100%;
+      }
+      @media screen and (max-width: 690px){
+        padding-top: 50px;
+        padding-bottom:100px ;
+      }
+    }
+
+    .baner__image {
+      padding-top: 210px;
+    }
+    @media screen and (max-width: 690px) {
+      flex-direction: column-reverse;
+    }
+  }
+  @media #{$info-phone}{
+    min-height: 710px;
+  }
+}

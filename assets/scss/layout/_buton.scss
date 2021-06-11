@@ -1,0 +1,81 @@
+.btn--blue-ban {
+  @include button(#00bec9, #fff, 2px solid #00bec9, 5px, 15px 30px);
+  @include font-size(18px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    @include button(#fff, #00bec9, 2px solid #00bec9, 5px, 15px 30px);
+  }
+}
+
+.btn--ouline {
+  margin-left: 38px;
+  @include button(none, #fff, 2px solid #fff, 5px, 15px 30px);
+  @include font-size(18px);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    @include button(#fff, #a17c00, 2px solid #a17c00, 5px, 15px 30px);
+  }
+}
+
+.btn--orange {
+  @include button(#fcc302, #fff, 2px solid #fcc302, 5px, 15px 30px);
+  @include font-size(18px);
+  font-weight: 700;
+  display: inline;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    @include button(#fff, #fcc302, 2px solid #fcc302, 5px, 15px 30px);
+  }
+}
+
+.btn--brown {
+  @include button(#a17c00, #fff, 2px solid #a17c00, 5px, 15px 30px);
+  font-size: 18px;
+  font-weight: 700;
+  display: inline;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  &:hover {
+    @include button(#fff, #a17c00, 2px solid #a17c00, 5px, 15px 30px);
+  }
+}
+
+.btn--blue-pro {
+  @include button(#00bec9, #fff, 2px solid #00bec9, 30px, 15px 30px);
+  @include font-size(18px);
+  @include transform(translate(-50%));
+  font-weight: 700;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
+  width: 200px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+
+  &:hover {
+    @include button(#fff, #00bec9, 2px solid #00bec9, 30px, 15px 30px);
+  }
+}
+
+.btn--play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85px;
+  line-height: 85px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  @include transform(translate(-50%, -50%));
+}

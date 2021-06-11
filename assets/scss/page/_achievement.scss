@@ -1,0 +1,53 @@
+.achievement {
+  background-image: url("../img/aware.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 580px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(176, 135, 0, 0.8);
+    z-index: 1;
+  }
+
+  .achievement__content {
+    text-align: center;
+
+    .item {
+      margin:0 0 60px 0;
+
+
+      h2 {
+        @include font-size(38px);
+        font-weight: 400;
+        color: #fff;
+        margin-top: 50px;
+        margin-bottom: 10px;
+
+      }
+
+      p {
+        @include font-size(36px);
+        font-weight: 700;
+        color: #fff;
+        @media screen and (max-width: 796px){
+          @include font-size(30px);
+        }
+        @media #{$info-phone}{
+          @include font-size(36px);
+        }
+      }
+      &:hover{
+        box-shadow: none;
+      }
+    }
+  }
+
+}

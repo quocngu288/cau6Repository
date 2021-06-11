@@ -1,0 +1,86 @@
+.introduce-2 {
+  width: 100%;
+  min-height: 800px;
+
+  .introduce-2__wrap {
+    @include flex();
+    justify-content: space-between;
+
+    .introduce-2__right {
+      width: 575px;
+      margin-top: 65px;
+      text-align: right;
+
+      h2 {
+        @include font-size(54px);
+        font-weight: 600;
+        margin-bottom: 28px;
+        color: #313243;
+        @media #{$info-phone-2}{
+          @include font-size(38px);
+        }
+      }
+
+      p {
+        @include font-size(26px);
+        font-weight: 400;
+        margin-bottom: 50px;
+        color: #313243;
+        @media #{$info-phone-2}{
+          @include font-size(18px);
+        }
+      }
+
+
+      @media #{$info-tablet-vertical}{
+        margin-bottom: 50px;
+        margin-top: 0px;
+      }
+      @media #{$info-phone-2}{
+        width: 80%;
+      }
+    }
+
+    .introduce-2__left {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: rgba(252, 195, 2, 0.6);
+      }
+
+      &:after {
+        content: "";
+        width: 255px;
+        height: 205px;
+        position: absolute;
+        background-color: #fcc302;
+        right: -40px;
+        bottom: -35px;
+        z-index: -1;
+      }
+
+      img {
+
+      }
+
+      @media #{$info-tablet-vertical}{
+        margin-bottom: 100px;
+      }
+      @media #{$info-phone-2}{
+        width: 80%;
+      }
+    }
+
+    @media #{$info-tablet-vertical}{
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+}
